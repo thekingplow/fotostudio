@@ -3,15 +3,449 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Test prepros</title>
+	<title>Фотостудия</title>
 	<link rel="stylesheet" href="css/style.css">
+	<link rel="icon" href="image/camera.png" type="image/png">
+	<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Edu+TAS+Beginner:wght@500&display=swap" rel="stylesheet">
+
+    <!-- Preloader -->
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!-- Preloader -->
+
 </head>
 <body>
+
+<!-- ПРЕЛОАДЕР -->
+
+<div class="preloader-wrap">
+	<div class="preloader">
+<div class="dice">
+  
+  <div class="face first-face">
+    <div class="dot"></div>  
+  </div>
+  
+  <div class="face second-face">
+    <div class="dot"></div>  
+    <div class="dot"></div>  
+  </div>
+  
+  <div class="face third-face">
+    <div class="dot"></div>  
+    <div class="dot"></div>
+    <div class="dot"></div>
+  </div>
+  
+  <div class="face fourth-face">
+    <div class="column">
+      <div class="dot"></div>  
+      <div class="dot"></div>  
+    </div>
+    <div class="column">
+      <div class="dot"></div>  
+      <div class="dot"></div>  
+    </div>    
+  </div>
+  
+  <div class="face fifth-face">
+    <div class="column">
+      <div class="dot"></div>  
+      <div class="dot"></div>  
+    </div>
+    <div class="column">
+      <div class="dot"></div>
+    </div>
+    <div class="column">
+      <div class="dot"></div>  
+      <div class="dot"></div>  
+    </div>    
+  </div>
+  
+  <div class="face sixth-face">
+    <div class="column">
+      <div class="dot"></div>  
+      <div class="dot"></div>
+      <div class="dot"></div>
+    </div>
+    <div class="column">
+      <div class="dot"></div>  
+      <div class="dot"></div>  
+      <div class="dot"></div>
+    </div>    
+  </div>
+  
+</div>
+
+
+<p>Пожалуйста подождите...</p>
+	</div>
+	</div>
+
+<!-- ПРЕЛОАДЕР -->
+
+
+<!-- ШАПКА -->
+
 	<header>
-		<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint expedita id numquam in architecto consequatur veniam perspiciatis cumque molestias esse!
+		<div class="container">
+			<div class="row">
+				<div class="logo">   
+					<a href="index.html"><img src="image/logo.png" alt="Лого"></a>
+				</div>
+				<input type="checkbox" id="nav-check">
+				<label for="nav-check" class="nav-toggler">
+					<span></span>
+				</label>
+				<nav>
+					<ul>
+						<li><a href="#services">Наши услуги</a></li>
+						<li><a href="#advantages">Преимущества</a></li>
+						<li><a href="#about">О нас</a></li>
+						<li><a href="#map">Контакты</a></li>
+					</ul>
+					<ul class="social-link">
+						<li><a href="https://vk.com/" title="vk" target="_blank"><ion-icon name="logo-vk" ></ion-icon></a></li>
+						<li><a href="https://www.instagram.com/" title="instagram" target="_blank"><ion-icon name="logo-instagram"></ion-icon></a></li>
+						<li><a href="https://www.facebook.com/" title="facebook" target="_blank"><ion-icon name="logo-facebook" ></ion-icon></a></li>
+						<li><a href="https://twitter.com/" title="twitter" target="_blank"><ion-icon name="logo-twitter" ></ion-icon></a></li>
+					</ul>
+				</nav>
+			</div>
+		</div>
 	</header>
-	<main>
-		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam quibusdam maiores tempora ducimus, officiis nihil temporibus iusto vel, dicta a aspernatur delectus ad ratione, excepturi eaque est. Tempora, provident, enim.</p>
+ 
+
+<!-- ШАПКА -->
+
+
+<!-- ГЛАВНЫЙ ФОН -->
+
+
+ <main>
+	<h1 class="animate__animated animate__slideInLeft">Профессиональный фотоцентр <br> в Минске</h1>
 	</main>
+
+
+<!-- ГЛАВНЫЙ ФОН -->
+
+
+
+<!-- УСЛУГИ -->
+
+
+<section id="services" >
+	<div class="container">
+	<div class="row justify-content-center">
+  <div class = "card">
+    <img src="image/ser1.jpg" alt="Печать фотографий">
+    <div class="card-content">
+      <h2 class="card-title-1">
+        Печать фотографий
+      </h2>
+      <p>
+        Фотографии помогут окунуться в мир воспоминаний и на какое-то время вновь пережить эти эмоции и чувства.
+      </p>
+		<a href="#">
+			Подробнее
+			<svg class="arrow-icon" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32">
+           		 <g fill="none" stroke="#fff" stroke-width="1.5" stroke-linejoin="round" stroke-miterlimit="10">
+                	<circle class="arrow-icon--circle" cx="16" cy="16" r="15.12"></circle>
+                	<path class="arrow-icon--arrow" d="M16.14 9.93L22.21 16l-6.07 6.07M8.23 16h13.98"></path>
+           		 </g>
+        	</svg>
+        </a>
+      </div>
+  </div>
+
+    <div class = "card">
+    <img src="image/ser2.jpg" alt="Проявка и оцифровка">
+    <div class="card-content">
+      <h2 class="card-title-2">
+        Проявка и оцифровка
+      </h2>
+      <p>
+        Настоящие и живые фотоснимки, с мягкими цветами и плавными переходами.
+      </p>
+		<a href="#">
+			Подробнее
+			<svg class="arrow-icon" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32">
+           		 <g fill="none" stroke="#fff" stroke-width="1.5" stroke-linejoin="round" stroke-miterlimit="10">
+                	<circle class="arrow-icon--circle" cx="16" cy="16" r="15.12"></circle>
+                	<path class="arrow-icon--arrow" d="M16.14 9.93L22.21 16l-6.07 6.07M8.23 16h13.98"></path>
+           		 </g>
+        	</svg>
+        </a>
+       </div>
+  </div>
+
+    <div class = "card">
+    <img src="image/ser3.jpg" alt="Печатные услуги">
+    <div class="card-content">
+      <h2 class="card-title-3">
+        Печатные услуги
+      </h2>
+      <p>
+      	Копирование и печать<br>Широкоформатная печать<br>Сканирование<br>Ламинирование
+      </p>
+		<a href="#">
+			Подробнее
+			<svg class="arrow-icon" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32">
+           		 <g fill="none" stroke="#fff" stroke-width="1.5" stroke-linejoin="round" stroke-miterlimit="10">
+                	<circle class="arrow-icon--circle" cx="16" cy="16" r="15.12"></circle>
+                	<path class="arrow-icon--arrow" d="M16.14 9.93L22.21 16l-6.07 6.07M8.23 16h13.98"></path>
+           		 </g>
+        	</svg>
+        </a>
+    
+    </div>
+  </div>
+	</div>
+	</div>
+</section>
+
+
+<!-- УСЛУГИ -->
+
+
+
+<!-- ПРЕИМУЩЕСТВА -->
+
+<section class="container" id="advantages" >
+	<h2>Почему выбирают нас?</h2>
+	<div class="row justify-content-center">
+		<figure>
+			<img src="image/professional.svg" alt="Профессионализм" class="filter-svg">
+			<h3>Профессионализм</h3>
+			<figcaption>Профессиональное оборудование и специалисты высочайшего уровня.</figcaption>
+		</figure>
+		<figure>
+			<img src="image/quality.svg" alt="Качество" class="filter-svg">
+			<h3>Качество</h3>
+			<figcaption>Контроль каждой стадии производства и гарантия качества готовой продукции.</figcaption>
+		</figure>
+		<figure>
+			<img src="image/hand-shake.svg" alt="Индивидуальность" class="filter-svg">
+			<h3>Индивидуальность</h3>
+			<figcaption>Широкий комплекс услуг. Большой ассортимент аксессуаров и фототоваров.</figcaption>
+		</figure>
+		<figure>
+			<img src="image/location.svg" alt="Доступность" class="filter-svg">
+			<h3>Доступность</h3>
+			<figcaption>Фотоцентр находится в пешей доступности от ст. метро</figcaption>
+		</figure>
+	</div>
+</section>
+
+<!-- ПРЕИМУЩЕСТВА -->
+
+<!-- О НАС -->
+
+ <section class="container" id="about">
+	<div class="wrapper-video">
+		<div class="thumb-wrap">
+			<iframe title="vimeo-player" src="https://player.vimeo.com/video/845263989?h=63369a79b3" width="640" height="360" frameborder="0"    allowfullscreen></iframe>
+		</div>
+	</div>
+	<div class="about-content">
+		<p>
+			В PhotoStudio вы можете не только сделать ксерокопию документов или распечатать фотографии, но и провести фотосессию в студии центра. Заходите к нам всей семьей сделать фото для визы в путешествие, а по возвращении заказывайте фотокнигу с лучшими экзотическими кадрами. Мы поможем с ретушью или подготовим слайдшоу для тёплого семейного вечера. А чтобы удивить старшее поколение вы можете оцифровать старые фотоплёнки и негативы.
+		</p>
+<p>
+	В фотоцентре доступно много услуг, но мы не останавливаемся на этом. Отслеживаем новинки, прислушиваемся к клиентам и коллегам &mdash; и предлагаем новые и новые форматы.
+</p>
+<p>
+	Добро пожаловать в PhotoStudio!
+</p>
+	</div>
+</section>
+
+
+<!-- О НАС -->
+
+
+<!-- TwentyTwenty -->
+
+
+<section id="container-twentytwenty">
+	<div class="container">
+	<div class="row">	
+		<div class="twentytwenty-block">	
+				<h3>Печать на принтере</h3>
+				<p>Дешевая бумага, не устойчивая к попаданию воды. Изображение теряет насыщенность. Чернила теряют цвет через небольшой период времени.</p>
+		</div>
+		<div class="twentytwenty-block">	
+		<div id="container1" class="container-twentytwenty">
+			  <img src="image/photo-before.jpg">
+  			  <img src="image/photo-after.jpg">
+		</div>
+		</div>
+		<div class="twentytwenty-block">
+				<h3>Печать в фотолаборатории</h3>
+				<p>Изображения корректируются по цвету, что позволяет получить наилучший результат. Фотобумага не выцветает и имеет высокую степень износостойкости.</p>
+		</div>	
+	</div>
+	</div>
+</section>	
+
+
+<!-- TwentyTwenty -->
+
+
+<!-- КАРТА -->
+
+<section id="map">
+	<div class="row">
+	<div class="flex-map">
+		<iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A2f6cbc3d9e5aea1ee22fd79e0d776db8dc99db1d7062a1c396e2763e4a72ca3e&amp;source=constructor" width="100%" height="450" frameborder="0"></iframe>
+	</div>
+	<div class="flex-map-content">
+		<h2>Контакты</h2>
+		<p>
+			<ul>
+				<li><ion-icon name="home-outline"></ion-icon><span>Минск, улица Веры Хоружей, 1А</span></li>
+				<li><ion-icon name="time-outline"></ion-icon><span>Пн-Пт &mdash; 10:00-20:00</span></li>
+				<li><ion-icon name="time-outline"></ion-icon><span>Сб-Вс &mdash; выходной</span></li>
+				<li><ion-icon name="call-outline"></ion-icon><a href="tel:+375291836204" title="+375 (29) 183-62-04">+375 (29) 183-62-04</a></li>
+				<li><ion-icon name="mail-outline"></ion-icon><a href="mailto:mdanilov1@yandex.ru" title="mdanilov1@yandex.ru">mdanilov1@yandex.ru</a></li>
+			</ul>
+		</p>
+		<div>
+			  <a class="button type1" href="#modal-content">
+    			 Обратная связь
+  			 </a>		
+		</div>
+	</div>
+	</div>
+</section>
+
+<!-- КАРТА -->
+
+<!-- ФОРМА СВЯЗИ/МОДАЛЬНОЕ ОКНО -->
+
+
+<div id="modal-content">
+  <a href="#" class="close"></a>
+  <div id="modal-inner">
+    <h2>Напишите нам</h2>
+
+
+    <form id="data" action="" class="form">
+      
+      <input type="text" placeholder="Ваше имя" class="form__input" id="name" required/>
+      <label for="name" class="form__label">Ваше имя</label>
+
+      <input type="tel" placeholder="+37529" class="form__input" id="tel" pattern="^\s*\+?375((33\d{7})|(29\d{7})|(44\d{7}|)|(25\d{7}))s*$" required />
+      <label for="tel" class="form__label">Номер телефона </label>
+
+      <input type="email" placeholder="Email" class="form__input" id="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" />
+      <label for="email" class="form__label">Email</label>
+
+      <textarea type="text" placeholder="Ваше сообщение" class="form__textarea" id="subject" required></textarea>
+      <label for="subject" class="form__label form__label__textarea">Ваше сообщение</label>
+
+      <button form="data" class="btn-form">
+      	Отправить
+      </button>
+
+    </form>
+  
+  	<a href="#" class="modal__close" title="закрыть">&times;</a>
+  </div>
+</div>
+
+
+<!-- ФОРМА СВЯЗИ/МОДАЛЬНОЕ ОКНО -->
+
+
+<!-- ПОДВАЛ -->
+
+<footer>
+	<p>&copy; 2023 FotoStudio Все права защищены</p>
+</footer>
+
+<!-- ПОДВАЛ -->
+
+
+
+
+
+
+
+<!-- TwentyTwenty JS Plagin-->
+
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+<script src="js/jquery.event.move.js"></script>
+<script src="js/jquery.twentytwenty.js"></script>
+<script>
+	$(window).load(function() {
+  $("#container1").twentytwenty();
+});
+</script>
+
+<!-- TwentyTwenty JS Plagin-->
+
+
+
+
+<!-- ПРЕЛОАДЕР -->
+
+<script>
+    $(window).on('load', function(){
+      $('.preloader-wrap').delay(7000).fadeOut('slow');
+    });
+  </script>
+
+<!-- ПРЕЛОАДЕР -->
+
+
+
 </body>
 </html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- Danilovitch M.D.  ~(_8^(|)  -->
