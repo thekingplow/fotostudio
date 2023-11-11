@@ -1,0 +1,25 @@
+.wrapper-video {
+  max-width: 750px;
+  margin: auto;
+}
+.about-content {
+  padding: 50px;
+  line-height: 1.8;
+  @include fn-size(13px, 8);
+}
+.thumb-wrap {
+  position: relative;
+  padding-bottom: 56.25%; /* задаёт высоту контейнера для 16:9 (если 4:3 — поставьте 75%) */
+  height: 0;
+  overflow: hidden;
+
+      iframe {
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          border-width: 0;
+          outline-width: 0;
+      }
+}

@@ -1,0 +1,14 @@
+@include tablet {
+	#map {
+		.row {
+		 	display: block;
+
+		 	.flex-map-content ul{
+		 		display: block;
+		 		width: 318px;
+		 		margin: auto;
+		 		padding-left: 20px;
+		 	}
+		}
+	}
+}

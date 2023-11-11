@@ -1,0 +1,32 @@
+main {
+	@include flex-column;
+	@include h2-title; 
+	color: $color-text;
+
+	position: relative;
+	min-height: 100vh;
+	min-width: 100vw;
+	overflow: hidden;
+	justify-content: center;
+	align-items: center;
+	padding: 0 50px;
+	transform-style: inherit;
+
+	&:before {
+		content: '';
+		@include pos-abs;
+		position: absolute;
+		min-height: 100vh;
+		background: transparent url("../image/main.jpg") center/cover no-repeat;
+		transition: 1s linear;
+		transform: translateZ(-1px) scale(2);
+		z-index: -1;
+	}
+	h1 {
+		@include fn-size(24px, 70);
+		letter-spacing: 5px;
+		text-shadow: 2px 2px 7px $color-text-2;
+		margin-top: -100px;
+	}
+}
+

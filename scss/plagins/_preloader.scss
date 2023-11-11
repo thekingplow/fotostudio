@@ -1,0 +1,155 @@
+.preloader-wrap {
+position: fixed;
+ z-index: 1090;
+  background: $background-color;
+  height: 100%;
+  width: 100%;
+
+        .preloader {
+          @include pos-center;
+
+                 p {
+                    padding: 3rem 1rem 0;
+                    text-align: center;
+                    line-height: 1.3;
+                    letter-spacing: 2px;
+                    font-size: 1.125em;
+                 }
+
+
+            .dice {
+              display: flex;
+              margin-top: 4rem;
+              justify-content: center;
+            }
+
+            .face {
+              display: flex;
+              width: 60px;
+              height: 60px;
+              margin: 0 0.7rem;
+              padding: 5px;
+              border-radius: 5px;
+              opacity: 0;
+            }
+            .face .dot {
+              width: 0.8rem;
+              height: 0.8rem;
+              background: $color-cube-1;
+              border-radius: 50%;
+            }
+            .face:nth-child(1) {
+              border: 2px solid $color-cube-1;
+              animation: waves 5s linear infinite;
+            }
+            .face:nth-child(1) .dot {
+              background: $color-cube-1;
+            }
+            .face:nth-child(2) {
+              border: 2px solid $color-cube-2;
+              animation: waves 5s 0.2s linear infinite;
+            }
+            .face:nth-child(2) .dot {
+              background: $color-cube-2;
+            }
+            .face:nth-child(3) {
+              border: 2px solid $color-cube-3;
+              animation: waves 5s 0.4s linear infinite;
+            }
+            .face:nth-child(3) .dot {
+              background: $color-cube-3;
+            }
+            .face:nth-child(4) {
+              border: 2px solid $color-cube-4;
+              animation: waves 5s 0.6s linear infinite;
+            }
+            .face:nth-child(4) .dot {
+              background: $color-cube-4;
+            }
+            .face:nth-child(5) {
+              border: 2px solid $color-cube-5;
+              animation: waves 5s 0.8s linear infinite;
+            }
+            .face:nth-child(5) .dot {
+              background: $color-cube-5;
+            }
+            .face:nth-child(6) {
+              border: 2px solid $color-cube-6;
+              animation: waves 5s 1s linear infinite;
+            }
+            .face:nth-child(6) .dot {
+              background: $color-cube-6;
+            }
+
+            .first-face {
+              justify-content: center;
+              align-items: center;
+            }
+
+            .second-face {
+              justify-content: space-between;
+            }
+            .second-face .dot:last-of-type {
+              align-self: flex-end;
+            }
+
+            .third-face {
+              justify-content: space-between;
+            }
+            .third-face .dot:nth-child(2) {
+              align-self: center;
+            }
+            .third-face .dot:last-of-type {
+              align-self: flex-end;
+            }
+
+            .fourth-face {
+              justify-content: space-between;
+            }
+            %column {
+              @include flex-column;
+              justify-content: space-between;
+            }
+            .fourth-face .column {
+              @extend %column;
+            }
+
+            .fifth-face {
+              justify-content: space-between;
+            }
+            .fifth-face .column {
+              @extend %column;
+            }
+            .fifth-face .column:nth-child(2) {
+              justify-content: center;
+            }
+
+            .sixth-face {
+              justify-content: space-between;
+            }
+            .sixth-face .column {
+              @extend %column;
+            }
+
+
+            @keyframes waves {
+              0% {
+                transform: translateY(0);
+                opacity: 0;
+              }
+              4% {
+                transform: translateY(-25px);
+                opacity: 1;
+              }
+              8% {
+                transform: translateY(0);
+                opacity: 1;
+              }
+              70% {
+                opacity: 0;
+              }
+            }
+      }
+}
+
+

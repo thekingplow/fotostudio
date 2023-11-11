@@ -1,0 +1,110 @@
+header {
+	position: sticky;
+	top: 0;
+	z-index: 99;
+	background: $background-color;
+	box-shadow: 0px 5px 8px 0px rgba(34, 60, 80, 0.2);
+
+
+	img {
+		width: 145px;
+		height: 85px;
+	}
+
+	ion-icon[name='logo-twitter'] {
+		color: $color-twitter;
+	}
+	ion-icon[name='logo-facebook'] {
+		color: $color-facebook;
+	}
+	ion-icon[name='logo-vk'] {
+		color: $color-vk;
+	}
+	ion-icon[name='logo-instagram'] {
+		color: $color-instagram;
+	}
+	nav {
+		display: flex;
+		align-items: center;
+		background: $background-color;
+
+	}
+	ul:first-child {
+		margin-right: 100px;
+	}
+	ul {
+		li {
+			display: inline-block;
+			margin-left: 30px;
+		}
+	}
+	.social-link {
+		margin-top: 10px;
+		margin-right: 10px;
+		
+			li  {
+		filter: grayscale(100%);
+    	transition: .5s;
+		margin-left: 5px;
+			
+			&:hover {
+				filter: grayscale(0);
+			}
+			}
+	}
+	a {
+		display: block;
+		font-size: 20px;
+		color: $background-color-5;
+		transition: all 0.5s ease;
+
+
+
+		&:hover, &:focus {
+			color: $color-text-3;
+			outline: none;
+		}
+	}
+	#nav-check {
+		position: absolute;
+		opacity: 0;
+		pointer-events: none;
+	}
+}
+%nav-toggler {
+	content: '';
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	background: $background-color-5;
+	left: 0;
+}
+.nav-toggler {
+	height: 38px;
+	width: 42px;
+	background: $background-color;
+	border-radius: 4px;
+	cursor: pointer;
+	display: none;
+	align-items: center;
+	justify-content: center;
+	margin-right: 15px;
+
+	span {
+		display: block;
+		height: 2.5px;
+		width: 20px;
+		position: relative;
+	
+		&:before {
+			top: -6px;
+			@extend %nav-toggler;
+		}
+		&:after {
+			top: 6px;
+			@extend %nav-toggler;
+		}
+	}
+}
+
+

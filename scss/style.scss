@@ -1,0 +1,22 @@
+@import './common/settings';
+@import './common/grid';
+@import './common/variables';
+@import './common/mixins' ;
+@import './common/media_breakpoints';
+@import './components/header';
+@import './components/media_screen/header_media';
+@import './components/main';
+@import './components/services';
+@import './components/advantages';
+@import './components/about';
+@import './plagins/twentytwenty';
+@import './plagins/media_screen/twentytwenty_media';
+@import './components/map';
+@import './components/media_screen/map_media';
+@import './components/feedback';
+@import './components/footer';
+@import './plagins/preloader';
+@import './plagins/media_screen/preloader_media';
+@import './components/error404';
+
+

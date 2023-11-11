@@ -1,0 +1,61 @@
+@include laptop_small {
+	.nav-toggler {
+		display: flex;
+	}
+	header {
+		img {
+			width: 120px;
+			height: 70px;
+	}
+		nav {
+			display: block;
+			position: absolute;
+			left: 0;
+			top: 100%;
+			width: 100%;
+			opacity: 0;
+			visibility: hidden;
+			text-align: center;
+			padding: 10px 15px;
+
+			ul:first-child {
+				margin-right: 0;
+			}
+			.social-link li {
+				display: inline-block;
+			}
+			li {
+				display: block;
+				margin: 0;
+				a {
+					padding: 10px 0;
+				}
+			}
+		}
+		#nav-check:checked ~ nav {
+			opacity: 1;
+			visibility: visible;
+			transition: 0.3s;
+		}
+		#nav-check ~ .nav-toggler {
+			box-shadow: 0 0 1px $color-text-2;
+		}
+		// #nav-check:focus ~ .nav-toggler {
+		// 	box-shadow: 0 0 1px $color-text-2;
+		// }
+		// #nav-check:hover ~ .nav-toggler {
+		// 	box-shadow: 0 0 1px $color-text-2;
+		// }
+		#nav-check:checked ~ .nav-toggler span {
+			background: transparent;
+		}
+		#nav-check:checked ~ .nav-toggler span::before {
+			top: 0;
+			transform: rotate(45deg);
+		}
+		#nav-check:checked ~ .nav-toggler span::after {
+			top: 0;
+			transform: rotate(-45deg);
+		}
+	}
+}

@@ -1,0 +1,26 @@
+html {
+	height: 100%;
+	overflow: hidden;
+}
+body {
+	font-family: 'Edu TAS Beginner', cursive;
+	margin: 0;
+	padding: 0;
+	height: 100%;
+	overflow-x: hidden; 
+	overflow-y: auto;
+	perspective: 1px;
+	transform-style: preserve-3d;
+	scroll-behavior: smooth;
+}
+* {
+	box-sizing: border-box;
+}
+a {
+	text-decoration: none;
+}
+ul {
+	padding: 0;
+	margin: 0;
+	list-style: none;
+}

@@ -1,0 +1,169 @@
+#modal-content {
+  position: fixed;
+  z-index: 99999;
+  height: 100%;
+  @include pos-abs;
+  pointer-events: none;
+  opacity: 0;
+  transition: opacity .2s;
+
+  &:target {
+      pointer-events: all;
+      opacity: 1;
+      transition: .5s;
+  }
+
+  #modal-inner {
+      @include pos-center;
+      border-radius: 10px;
+      display: block;
+      padding: 48px;
+      line-height: 1.8;
+      box-shadow: 0px 0px 50px 30px rgba(246, 251, 255, 0.3);
+      background: $background-color-5; 
+
+       h2 {
+          @include fn-size(24px, 22);
+          color: $color-text;
+          text-align: center;
+          margin: 0 0 30px ;
+          transition: 0.3s;
+
+      }
+  }
+    a.close {
+          content: "";
+          position: absolute;
+          @include pos-abs;
+          background-color: rgba($background-color-2, .8);
+          backdrop-filter: blur(10px);
+          opacity: 0.9;
+          transition: opacity .2s;
+
+          &:hover {
+              opacity: 0.7;
+          }
+    }
+
+
+    .modal__close {
+            position: absolute;
+            font-size: 42px;
+            top: -22.5px;
+            right: 7.5px;
+            color: $color-text;
+            transition: .3s;
+
+            &:hover, &:focus {
+              color: $color-close;
+              outline: none;
+            }
+        }
+
+// форма записи
+
+      %form-enter {
+          width: clamp(120px, 50vw, 420px);
+           border: 1px solid $form-color-btn;
+           border-radius: 4px;
+           transition: all .25s;
+      }
+      %form-enter-placeholder {
+          display: none;
+          color: transparent;
+          user-select: none;
+        }
+      .form__input {
+            @extend %form-enter;
+            height: 2.5rem;
+            padding: 0 1.25rem;
+            margin: 0.25rem auto;
+
+            &:focus {
+                outline: none;
+            }
+            &::placeholder {
+                @extend %form-enter-placeholder;
+            }
+
+      }
+      .form__textarea {
+            @extend %form-enter;
+            height: 120px;
+            padding: 1.25rem;
+            resize: none;
+
+              &:focus {
+                outline: none;
+              }
+              &::placeholder {
+                @extend %form-enter-placeholder;
+            }
+          }
+        @mixin form-trans-label ($size)  {
+                transform: translateY($size) scale(1);
+                color: $color-text;
+                font-weight: bold;
+        }
+        .form__input:focus + .form__label, .form__input:not(:placeholder-shown) + .form__label { 
+                @include form-trans-label(-4.5rem);
+        }
+        .form__textarea:focus + .form__label, .form__textarea:not(:placeholder-shown) + .form__label {
+                @include form-trans-label(-9.5rem); 
+        }
+        .form__label {
+                // font-size: 1rem;
+                 @include fn-size(14px, 2);
+                color: $background-color-5; 
+                display: block;
+                transform: translate(1.25rem, -2.5rem);
+                transform-origin: 0 0; 
+                transition: all .5s;
+                user-select: none;
+                pointer-events: none;
+              }
+               .form__label__textarea {
+                transform: translate(1.25rem, -7.5rem);
+          }
+
+          // кнопка
+
+        .btn-form {
+              cursor: pointer;
+              padding: 0.75em 1.5em;
+              border: 0.125em solid $form-color-btn;
+              box-shadow: 0.5em 0.5em 0 -0.100em $form-color-btn, 0.5em 0.5em $form-color-btn;
+              overflow: hidden;
+              position: relative;
+              left: 50%;
+              transform: translateX(-50%);
+              color: $form-color-btn;
+              @include fn-size(12px, 8);
+              text-transform: uppercase;
+              transition: 0.3s;
+
+                  &:hover, &:focus {
+                      outline: none;
+                      color: $color-text;
+                      box-shadow: 1em 1em 0 -0.125em $color-text, 1em 1em $color-text;
+
+                        &:after {
+                            transform: rotate(0deg);
+                        }
+                  }
+            }
+        .btn-form:after {
+              content: "";
+              background: $form-color-btn;
+              width: 150%;
+              height: 100%;
+              position: absolute;
+              top: 0;
+              left: 0;
+              z-index: -1;
+              transform: rotate(-45deg) translateY(-3em);
+              transform-origin: 0% 100%;
+              transition: 0.3s;
+            }
+}
+

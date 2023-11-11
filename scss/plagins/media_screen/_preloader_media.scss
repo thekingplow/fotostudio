@@ -1,0 +1,16 @@
+@include tablet { 
+	.preloader-wrap {
+		.preloader {
+			.face {
+              width: 40px;
+              height: 40px;
+
+                .dot {
+              width: 0.4rem;
+              height: 0.4rem;
+            	}
+            }
+		    }
+	   }
+
+}

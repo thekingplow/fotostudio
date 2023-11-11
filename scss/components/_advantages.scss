@@ -1,0 +1,39 @@
+#advantages {
+
+h2 {
+	@include h2-title; 
+	@include fn-size(24px, 50);
+}
+
+figure {
+	@include figure-img;
+	text-align: center;
+
+	.filter-svg {
+	filter: invert(49%) sepia(73%) saturate(358%) hue-rotate(133deg) brightness(95%) contrast(89%);
+	}
+	
+	img {
+		width: 80px;
+		height: 80px;
+	}
+	&:hover {
+		background: $background-color-4;
+		box-shadow: 4px 4px 60px 20px rgba(54, 157, 161, 0.2);
+		transition: background .3s 0s ease-out;
+		border-radius: 2px;
+		color: $color-text;
+
+			.filter-svg {
+	filter: invert(100%) sepia(0%) saturate(15%) hue-rotate(285deg) brightness(105%) contrast(104%);
+		}
+		h3 {
+			color: $color-text;
+		}
+	}
+	h3 {
+		color: $background-color-4;
+		font-weight: bold;
+		}
+	}
+}

@@ -1,0 +1,44 @@
+@mixin h2-title {
+		text-align: center;
+		padding-top: 20px;
+	}
+
+	@mixin figure-img {
+	flex-basis: 250px;
+	max-width: 300px;
+	flex-grow: 1;
+	padding: 15px;
+}
+
+@mixin pos-center {
+	    position: fixed;
+	    top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+}
+@mixin pos-abs {
+		  top: 0;
+		  right: 0;
+		  bottom: 0;
+		  left: 0;
+}
+
+@mixin flex-column {
+	display: flex;	
+	flex-direction: column;
+}
+
+// @mixin font-size ($min-size, $max-size) {
+// 	font-size: clamp($min-size, 0.574rem + 4.63vw, $max-size);
+// }
+
+@mixin fn-size ($min-size, $max-size) {
+	font-size: calc($min-size + $max-size * (100vw - 320px) / 1600); 
+}
+
+	 // font-size: calc(24px + 70 * (100vw - 320px) / 1600);  - Вариант 2
+	 // 24 - минимальный шрифт
+	 // 70 - разница между мин и макс шрифтом
+	 // 100vw - полная текущая ширина вьюпорта
+	 // 320 - мин ширина контейнера сайта
+	 // 1600 - разница между макс и мин размером контейнера, т.е. 1600 + 320 = 1920
